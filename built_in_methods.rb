@@ -27,7 +27,8 @@
 # ends with "rld". It does so the return value will be true
 "Hello World".end_with?("rld")
 
-# The even? method is called on the Integer 12.
+# The even? method is called on the Integer 12. 
+# even? has a job to print a boolean value if the Integer is even or not.
 # 12 is even so the return value will be true
 puts 12.even?
 
@@ -74,14 +75,22 @@ puts full_name.swapcase
 # Include comments above each method call explaining the impact and return value of that method.
 
 # The .integer? method is called on the num1 variable. The num1 variable is not an integer.
-# The .integer? will return with a boolean so it will return false.
+# The puts command will return with a boolean so it will return false.
+# The .integer? method is called on the num2 variable. The num2 variable is an integer.
+# The puts command will return with a boolean so it will return true.
 num1 = 1.76
+num2 = 63
 puts num1.integer?
+puts num2.integer?
 
-# The next method is called on the num2 variable. The next method will return the value of the integer + 1
-# The return value will be 74
-num2 = 73
-puts num2.next
+# The next method is called on the num3 variable. The next method will return the value of the integer + 1
+# The return value will be an Integer of 74
+# The next method is called on the num4 variable. The next method will return the value of the integer + 1
+# The return value will be an Integer of -24
+num3 = 73
+num4 = -25
+puts num3.next
+puts num4.next
 
 
 
@@ -94,12 +103,22 @@ puts num2.next
 # The .reverse method is called on the numbers variable. The numbers variable stores an Array of Integers. 
 # The .reverse method will return the array value but
 # in reverse. The return value will be [255, 52, 22, 16, 5, 1]
+# The .insert() method is called on the ages variable. The ages variable stores an Array of Integers.
+# The .insert() method will return the array value but will insert 100 in index position 4
+# The return value will be [35, 24, 42, 65, 100, 13]
 numbers = [1, 5, 16, 22, 52, 255]
+ages = [35, 24, 42, 65, 13]
 puts numbers.reverse
+puts ages.insert(4, 100)
 
 
 # The .uniq method is called on the classmates variable. The classmates variable stores an Array of Strings.
 # The .uniq method removes any duplicated elements from the Array.
 # The return value will be "John", "Amy", "Alicia", "Jen", "Sam", "Sammy"
+# The .pop method is called on the teachers variable. The teachers variable stores and Array of Strings.
+# The .pop method removed the last item in the Array and returns it.
+# The return value will be "Tony"
 classmates = ["John", "Amy", "Amy", "Alicia", "Jen", "Jen", "Sam", "Sammy"]
+teachers = ["Molly", "David", "Jeremy", "Tony"]
 puts classmates.uniq
+puts teachers.pop
